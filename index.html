@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Grocery Shopping List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://get.mavo.io/mavo.js"></script>
+  <link rel="stylesheet" href="https://get.mavo.io/mavo.css">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body mv-app="grocery-shopping-list" mv-storage="https://www.dropbox.com/s/q2oz0rdjqdg39j4/grocery-list.json?dl=0">
+  <h1>Grocery Shopping List</h1>
+  <form>
+    <label for="dropbox-link">Dropbox Link</label>
+    <input type="text" name="dropbox-link" id="dropbox-link" property>
+    <div mv-multiple property="items">
+      <label for="[name]"></label>
+      <input type="checkbox" name="name" id="[name]">
+      <span>[name]</span>
+    </div>
+  </form>
+</body>
+</html>
